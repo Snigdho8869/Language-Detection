@@ -1,4 +1,4 @@
-# Language-DetectionLanguage Detection using Machine Learning and Deep Learning
+# Language-Detection using Machine Learning and Deep Learning
 
 This repository contains code and resources for a language detection project based on Machine Learning (ML) and Deep Learning (DL) algorithms. The project aims to identify 18 different languages, including English, Spanish, French, German, Italian, Japanese, Chinese, Arabic, Hindi, Bengali and more.
 

@@ -57,13 +57,13 @@ def language_detection():
         return words  
     
     def get_code(N):
-        for x,y in dic.items():
+        for x,y in codes.items():
             if y==N:
                 return x
                 
     def prediction_function(sentence):
         sent=' '.join(remove_stop_word(sentence))
-        sent=PipelineModel.transform([sent])
+        sent=tfidf_vectorizer.transform([sent])
         sent=pd.DataFrame.sparse.from_spmatrix(sent)
         return get_code(np.argmax(model.predict(sent)))
 
